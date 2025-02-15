@@ -29,9 +29,16 @@ Q4:
 '''
 
 # TODO: Write your code here
-sentence.remove("a")
-sentence.remove("dark")
-sentence.remove("and")
+#sentence.remove("a")
+#sentence.remove("dark")
+#sentence.remove("and")
+removal = []
+for word in sentence:
+    if "a" in word:
+        removal.append(word)
+for word in removal:
+    sentence.remove(word)
+
 print(sentence)
 ##################################################
 '''
